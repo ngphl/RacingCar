@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.button1 = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -35,9 +36,20 @@
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.roadTrack1 = new System.Windows.Forms.PictureBox();
 			this.roadTrack2 = new System.Windows.Forms.PictureBox();
+			this.AI1 = new System.Windows.Forms.PictureBox();
+			this.AI2 = new System.Windows.Forms.PictureBox();
+			this.explosion = new System.Windows.Forms.PictureBox();
+			this.player = new System.Windows.Forms.PictureBox();
+			this.trophy = new System.Windows.Forms.PictureBox();
+			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.roadTrack1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.roadTrack2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.AI1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.AI2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.explosion)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.trophy)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// button1
@@ -83,6 +95,11 @@
 			// 
 			this.panel1.BackColor = System.Drawing.Color.Black;
 			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.panel1.Controls.Add(this.trophy);
+			this.panel1.Controls.Add(this.player);
+			this.panel1.Controls.Add(this.explosion);
+			this.panel1.Controls.Add(this.AI2);
+			this.panel1.Controls.Add(this.AI1);
 			this.panel1.Controls.Add(this.roadTrack2);
 			this.panel1.Controls.Add(this.roadTrack1);
 			this.panel1.Location = new System.Drawing.Point(12, 12);
@@ -110,6 +127,65 @@
 			this.roadTrack2.TabIndex = 1;
 			this.roadTrack2.TabStop = false;
 			// 
+			// AI1
+			// 
+			this.AI1.BackColor = System.Drawing.Color.Transparent;
+			this.AI1.Image = global::RacingCar.Properties.Resources.carGrey;
+			this.AI1.Location = new System.Drawing.Point(66, 19);
+			this.AI1.Name = "AI1";
+			this.AI1.Size = new System.Drawing.Size(50, 101);
+			this.AI1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.AI1.TabIndex = 2;
+			this.AI1.TabStop = false;
+			// 
+			// AI2
+			// 
+			this.AI2.BackColor = System.Drawing.Color.Transparent;
+			this.AI2.Image = global::RacingCar.Properties.Resources.carGreen;
+			this.AI2.Location = new System.Drawing.Point(294, 85);
+			this.AI2.Name = "AI2";
+			this.AI2.Size = new System.Drawing.Size(50, 101);
+			this.AI2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.AI2.TabIndex = 3;
+			this.AI2.TabStop = false;
+			// 
+			// explosion
+			// 
+			this.explosion.BackColor = System.Drawing.Color.Transparent;
+			this.explosion.Image = global::RacingCar.Properties.Resources.explosion;
+			this.explosion.Location = new System.Drawing.Point(153, 234);
+			this.explosion.Name = "explosion";
+			this.explosion.Size = new System.Drawing.Size(64, 64);
+			this.explosion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.explosion.TabIndex = 4;
+			this.explosion.TabStop = false;
+			// 
+			// player
+			// 
+			this.player.BackColor = System.Drawing.Color.Transparent;
+			this.player.Image = global::RacingCar.Properties.Resources.carYellow;
+			this.player.Location = new System.Drawing.Point(161, 286);
+			this.player.Name = "player";
+			this.player.Size = new System.Drawing.Size(50, 101);
+			this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.player.TabIndex = 5;
+			this.player.TabStop = false;
+			// 
+			// trophy
+			// 
+			this.trophy.BackColor = System.Drawing.Color.Transparent;
+			this.trophy.Image = global::RacingCar.Properties.Resources.bronze;
+			this.trophy.Location = new System.Drawing.Point(66, 157);
+			this.trophy.Name = "trophy";
+			this.trophy.Size = new System.Drawing.Size(250, 100);
+			this.trophy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.trophy.TabIndex = 6;
+			this.trophy.TabStop = false;
+			// 
+			// timer1
+			// 
+			this.timer1.Interval = 10;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -126,6 +202,11 @@
 			this.panel1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.roadTrack1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.roadTrack2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.AI1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.AI2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.explosion)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.trophy)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -140,6 +221,12 @@
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.PictureBox roadTrack2;
 		private System.Windows.Forms.PictureBox roadTrack1;
+		private System.Windows.Forms.PictureBox trophy;
+		private System.Windows.Forms.PictureBox player;
+		private System.Windows.Forms.PictureBox explosion;
+		private System.Windows.Forms.PictureBox AI2;
+		private System.Windows.Forms.PictureBox AI1;
+		private System.Windows.Forms.Timer timer1;
 	}
 }
 
