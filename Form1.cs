@@ -160,6 +160,7 @@ namespace RacingCar
 				trophy.Image = Properties.Resources.silver;
 			}
 
+			playSound();
 		}
 
 		private void changeAI2()
@@ -249,6 +250,39 @@ namespace RacingCar
 				default:
 					break;
 			}
+		}
+
+		private void moveCar(object sender, KeyEventArgs e)
+		{
+			if (e.KeyCode == Keys.Left && player.Left > 0)
+			{
+				carLeft = true;
+			}
+
+			if (e.KeyCode == Keys.Right && player.Left + player.Width < panel1.Width)
+			{
+				carRight = true;
+			}
+		}
+
+		private void stopCar(object sender, KeyEventArgs e)
+		{
+			// if the LEFT key is up we set the car left to false
+			if (e.KeyCode == Keys.Left)
+			{
+				carLeft = false;
+			}
+			// if the RIGHT key is up we set the car right to false
+			if (e.KeyCode == Keys.Right)
+			{
+				carRight = false;
+			}
+		}
+
+		private void playSound()
+		{
+			System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"hit.wav");
+			player.Play();
 		}
 	}
 }

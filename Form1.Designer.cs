@@ -34,22 +34,22 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.distance = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.roadTrack1 = new System.Windows.Forms.PictureBox();
-			this.roadTrack2 = new System.Windows.Forms.PictureBox();
-			this.AI1 = new System.Windows.Forms.PictureBox();
-			this.AI2 = new System.Windows.Forms.PictureBox();
-			this.explosion = new System.Windows.Forms.PictureBox();
-			this.player = new System.Windows.Forms.PictureBox();
 			this.trophy = new System.Windows.Forms.PictureBox();
+			this.player = new System.Windows.Forms.PictureBox();
+			this.explosion = new System.Windows.Forms.PictureBox();
+			this.AI2 = new System.Windows.Forms.PictureBox();
+			this.AI1 = new System.Windows.Forms.PictureBox();
+			this.roadTrack2 = new System.Windows.Forms.PictureBox();
+			this.roadTrack1 = new System.Windows.Forms.PictureBox();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.roadTrack1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.roadTrack2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.AI1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.AI2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.explosion)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trophy)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.explosion)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.AI2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.AI1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.roadTrack2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.roadTrack1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// button1
@@ -107,58 +107,16 @@
 			this.panel1.Size = new System.Drawing.Size(380, 424);
 			this.panel1.TabIndex = 4;
 			// 
-			// roadTrack1
+			// trophy
 			// 
-			this.roadTrack1.Image = global::RacingCar.Properties.Resources.roadTrack;
-			this.roadTrack1.Location = new System.Drawing.Point(-2, -638);
-			this.roadTrack1.Name = "roadTrack1";
-			this.roadTrack1.Size = new System.Drawing.Size(385, 632);
-			this.roadTrack1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.roadTrack1.TabIndex = 0;
-			this.roadTrack1.TabStop = false;
-			// 
-			// roadTrack2
-			// 
-			this.roadTrack2.Image = global::RacingCar.Properties.Resources.roadTrack;
-			this.roadTrack2.Location = new System.Drawing.Point(-3, -222);
-			this.roadTrack2.Name = "roadTrack2";
-			this.roadTrack2.Size = new System.Drawing.Size(385, 632);
-			this.roadTrack2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.roadTrack2.TabIndex = 1;
-			this.roadTrack2.TabStop = false;
-			// 
-			// AI1
-			// 
-			this.AI1.BackColor = System.Drawing.Color.Transparent;
-			this.AI1.Image = global::RacingCar.Properties.Resources.carGrey;
-			this.AI1.Location = new System.Drawing.Point(66, 19);
-			this.AI1.Name = "AI1";
-			this.AI1.Size = new System.Drawing.Size(50, 101);
-			this.AI1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.AI1.TabIndex = 2;
-			this.AI1.TabStop = false;
-			// 
-			// AI2
-			// 
-			this.AI2.BackColor = System.Drawing.Color.Transparent;
-			this.AI2.Image = global::RacingCar.Properties.Resources.carGreen;
-			this.AI2.Location = new System.Drawing.Point(294, 85);
-			this.AI2.Name = "AI2";
-			this.AI2.Size = new System.Drawing.Size(50, 101);
-			this.AI2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.AI2.TabIndex = 3;
-			this.AI2.TabStop = false;
-			// 
-			// explosion
-			// 
-			this.explosion.BackColor = System.Drawing.Color.Transparent;
-			this.explosion.Image = global::RacingCar.Properties.Resources.explosion;
-			this.explosion.Location = new System.Drawing.Point(153, 234);
-			this.explosion.Name = "explosion";
-			this.explosion.Size = new System.Drawing.Size(64, 64);
-			this.explosion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.explosion.TabIndex = 4;
-			this.explosion.TabStop = false;
+			this.trophy.BackColor = System.Drawing.Color.Transparent;
+			this.trophy.Image = global::RacingCar.Properties.Resources.bronze;
+			this.trophy.Location = new System.Drawing.Point(66, 157);
+			this.trophy.Name = "trophy";
+			this.trophy.Size = new System.Drawing.Size(250, 100);
+			this.trophy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.trophy.TabIndex = 6;
+			this.trophy.TabStop = false;
 			// 
 			// player
 			// 
@@ -171,16 +129,58 @@
 			this.player.TabIndex = 5;
 			this.player.TabStop = false;
 			// 
-			// trophy
+			// explosion
 			// 
-			this.trophy.BackColor = System.Drawing.Color.Transparent;
-			this.trophy.Image = global::RacingCar.Properties.Resources.bronze;
-			this.trophy.Location = new System.Drawing.Point(66, 157);
-			this.trophy.Name = "trophy";
-			this.trophy.Size = new System.Drawing.Size(250, 100);
-			this.trophy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.trophy.TabIndex = 6;
-			this.trophy.TabStop = false;
+			this.explosion.BackColor = System.Drawing.Color.Transparent;
+			this.explosion.Image = global::RacingCar.Properties.Resources.explosion;
+			this.explosion.Location = new System.Drawing.Point(153, 234);
+			this.explosion.Name = "explosion";
+			this.explosion.Size = new System.Drawing.Size(64, 64);
+			this.explosion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.explosion.TabIndex = 4;
+			this.explosion.TabStop = false;
+			// 
+			// AI2
+			// 
+			this.AI2.BackColor = System.Drawing.Color.Transparent;
+			this.AI2.Image = global::RacingCar.Properties.Resources.carGreen;
+			this.AI2.Location = new System.Drawing.Point(294, 85);
+			this.AI2.Name = "AI2";
+			this.AI2.Size = new System.Drawing.Size(50, 101);
+			this.AI2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.AI2.TabIndex = 3;
+			this.AI2.TabStop = false;
+			// 
+			// AI1
+			// 
+			this.AI1.BackColor = System.Drawing.Color.Transparent;
+			this.AI1.Image = global::RacingCar.Properties.Resources.carGrey;
+			this.AI1.Location = new System.Drawing.Point(66, 19);
+			this.AI1.Name = "AI1";
+			this.AI1.Size = new System.Drawing.Size(50, 101);
+			this.AI1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.AI1.TabIndex = 2;
+			this.AI1.TabStop = false;
+			// 
+			// roadTrack2
+			// 
+			this.roadTrack2.Image = global::RacingCar.Properties.Resources.roadTrack;
+			this.roadTrack2.Location = new System.Drawing.Point(-3, -222);
+			this.roadTrack2.Name = "roadTrack2";
+			this.roadTrack2.Size = new System.Drawing.Size(385, 632);
+			this.roadTrack2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.roadTrack2.TabIndex = 1;
+			this.roadTrack2.TabStop = false;
+			// 
+			// roadTrack1
+			// 
+			this.roadTrack1.Image = global::RacingCar.Properties.Resources.roadTrack;
+			this.roadTrack1.Location = new System.Drawing.Point(-2, -638);
+			this.roadTrack1.Name = "roadTrack1";
+			this.roadTrack1.Size = new System.Drawing.Size(385, 632);
+			this.roadTrack1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.roadTrack1.TabIndex = 0;
+			this.roadTrack1.TabStop = false;
 			// 
 			// timer1
 			// 
@@ -200,14 +200,16 @@
 			this.Name = "Form1";
 			this.Text = "Racing Car";
 			this.Load += new System.EventHandler(this.Form1_Load);
+			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.moveCar);
+			this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.stopCar);
 			this.panel1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.roadTrack1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.roadTrack2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.AI1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.AI2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.explosion)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.trophy)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.explosion)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.AI2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.AI1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.roadTrack2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.roadTrack1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
