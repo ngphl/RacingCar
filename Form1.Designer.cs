@@ -32,7 +32,7 @@
 			this.button1 = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
+			this.distance = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.roadTrack1 = new System.Windows.Forms.PictureBox();
 			this.roadTrack2 = new System.Windows.Forms.PictureBox();
@@ -82,14 +82,14 @@
 			this.label2.TabIndex = 2;
 			this.label2.Text = "Use Left and Right Key to Move Car";
 			// 
-			// label3
+			// distance
 			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(165, 458);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(67, 13);
-			this.label3.TabIndex = 3;
-			this.label3.Text = "Distance: 00";
+			this.distance.AutoSize = true;
+			this.distance.Location = new System.Drawing.Point(165, 458);
+			this.distance.Name = "distance";
+			this.distance.Size = new System.Drawing.Size(67, 13);
+			this.distance.TabIndex = 3;
+			this.distance.Text = "Distance: 00";
 			// 
 			// panel1
 			// 
@@ -185,6 +185,7 @@
 			// timer1
 			// 
 			this.timer1.Interval = 10;
+			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
 			// Form1
 			// 
@@ -192,7 +193,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(399, 657);
 			this.Controls.Add(this.panel1);
-			this.Controls.Add(this.label3);
+			this.Controls.Add(this.distance);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.button1);
@@ -217,7 +218,7 @@
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label distance;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.PictureBox roadTrack2;
 		private System.Windows.Forms.PictureBox roadTrack1;
